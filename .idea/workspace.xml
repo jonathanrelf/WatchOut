@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0468c082-895c-4c89-bc8c-1bf276de0a90" name="Default" comment="Adds basic clock functionality (HH:MM:SS)">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WatchOut/ClockModeOption.py" afterPath="$PROJECT_DIR$/WatchOut/ClockModeOption.py" />
-    </list>
+    <list default="true" id="0468c082-895c-4c89-bc8c-1bf276de0a90" name="Default" comment="Adds basic clock functionality (HH:MM:SS)" />
     <ignored path="WatchOut.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -61,7 +59,7 @@
       <file leaf-file-name="ModeOption.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WatchOut/ModeOption.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="714">
+            <state vertical-scroll-proportion="0.0" vertical-offset="63" max-vertical-offset="714">
               <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
               <folding />
             </state>
