@@ -21,7 +21,7 @@ def option4(event):
 
 def switch_mode(event):
     global watch
-    watch.current_mode['option'].switch_mode()
+    watch.switch_mode()
 
 def start_watch(start_mode='clock'):
     pfc = pifacecad.PiFaceCAD()
@@ -37,3 +37,4 @@ def start_watch(start_mode='clock'):
     global watch
     watch = Watch(pfc, start_mode)
 
+    switch_listener.activate()
