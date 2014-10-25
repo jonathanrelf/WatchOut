@@ -7,6 +7,7 @@ class ClockModeOption(ModeOption):
         super().__init__(*args)
 
     def enter(self):
+
         self.clear_display()
         self.update_display(self.update_time())
 
