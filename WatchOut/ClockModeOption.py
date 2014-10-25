@@ -21,5 +21,5 @@ class ClockModeOption(ModeOption):
         dt_mon = time.strftime("%m")
         dt_year = time.strftime("%Y")
 
-        date_time_str = dt_hour+":"+dt_min+":"+dt_sec+":\n"+dt_day+" "+dt_date+"-"+dt_mon+"-"+dt_year
+        date_time_str = dt_hour+":"+dt_min+":"+dt_sec+"\n"+dt_day+" "+dt_date+"-"+dt_mon+"-"+dt_year
         return date_time_str
