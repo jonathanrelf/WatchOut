@@ -15,6 +15,9 @@ pfc.lcd.cursor_off()
 def showClock(event):
     piClock.showClock()
 
+def showClock():
+    piClock.showClock()
+
 listener = pifacecad.SwitchEventListener(chip=pfc)
 listener.register(0, pifacecad.IODIR_ON, showClock)
 listener.activate()
