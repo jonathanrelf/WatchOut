@@ -31,4 +31,5 @@ class ModeOption(object):
         pass
 
     def update_display(self, text=""):
+        self.watch.pfc.lcd.clear()
         self.watch.pfc.lcd.write(text)
