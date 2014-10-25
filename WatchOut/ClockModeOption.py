@@ -1,15 +1,23 @@
 __author__ = 'Jonathan'
 from WatchOut.ModeOption import ModeOption
 import time
+import threading
+import pifacecad
 
-class ClockModeOption(ModeOption):
-    def __init__(self,*args):
-        super().__init__(*args)
+class UpdateThread(threading.Thread):
 
-    def enter(self):
+    pfc = pifacecad.PiFaceCAD()
 
-        self.clear_display()
-        self.update_display(self.update_time())
+    def __init__(self, event):
+        threading.Thread.__init__(self)
+        self.stopped = event
+
+    def run(self):
+        print("RUN")
+        while not self.stopped.wait(1):
+            self.pfc.lcd.set_cursor(0,0)
+            self.pfc.lcd.write(self.update_time())
+        print("STOP LOOP")
 
     def update_time(self):
         dt_hour = time.strftime("%H")
@@ -22,4 +30,28 @@ class ClockModeOption(ModeOption):
         dt_year = time.strftime("%Y")
 
         date_time_str = dt_hour+":"+dt_min+":"+dt_sec+"\n"+dt_day+" "+dt_date+"-"+dt_mon+"-"+dt_year
+        print("OUTPUT: " + date_time_str)
         return date_time_str
+
+class ClockModeOption(ModeOption):
+    def __init__(self,*args):
+        super().__init__(*args)
+
+#    def update(self):
+#        if(self.running):
+#            threading.Timer(1, self.update_display(self.update_time)).start()
+
+    def enter(self):
+        self.stopFlag = threading.Event()
+        thread = UpdateThread(self.stopFlag)
+        thread.start()
+
+        print("ENTER")
+
+        self.clear_display()
+
+#        self.update()
+
+    def exit(self):
+        print("EXIT")
+        self.stopFlag.set()
