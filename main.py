@@ -5,4 +5,4 @@ import clock
 piClock = clock.Clock()
 pfc = pifacecad.PiFaceCAD()
 
-pfc.lcd.write(piClock.getTime().__str__())
+pfc.lcd.write(piClock.getTime()+"\n"+piClock.getDate())
