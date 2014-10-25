@@ -25,6 +25,7 @@ def switch_mode(event):
 
 def start_watch(start_mode='clock'):
     pfc = pifacecad.PiFaceCAD()
+    pfc.lcd.clear()
 
     switch_listener = pifacecad.SwitchEventListener(chip=pfc)
     switch_listener.register(0,pifacecad.IODIR_ON,option1)

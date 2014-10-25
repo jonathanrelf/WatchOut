@@ -1,7 +1,7 @@
 __author__ = 'Jonathan'
 from WatchOut.ModeOption import ModeOption
 
-class ClockModeOption(ModeOption):
+class CalendarModeOption(ModeOption):
     def __init__(self,*args):
         super().__init__(*args)
 
