@@ -34,9 +34,9 @@ class UpdateThread(threading.Thread):
 class ClockModeOption(ModeOption):
     def __init__(self,*args):
         super().__init__(*args)
+        self.stopFlag = threading.Event()
 
     def enter(self):
-        self.stopFlag = threading.Event()
         thread = UpdateThread(self.stopFlag)
         thread.start()
 
