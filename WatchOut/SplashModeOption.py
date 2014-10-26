@@ -41,7 +41,7 @@ class SplashModeOption(ModeOption):
         Screen.pfc.lcd.write_custom_bitmap(3)
 
         time.sleep(2)
-        self.exit()
+        self.watch.switch_mode("menu")
 
     def exit(self):
-        None
+        pass

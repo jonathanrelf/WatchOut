@@ -49,5 +49,5 @@ class ClockModeOption(ModeOption):
         print("EXITING")
         self.stopFlag.set()
         self.thread.join()
-        self.stopFlag.wait()
+        self.stopFlag.clear()
         print("exited")
