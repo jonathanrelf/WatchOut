@@ -16,7 +16,7 @@ def update_time():
     dt_year = time.strftime("%Y")
 
     date_time_str = dt_hour+":"+dt_min+":"+dt_sec+"\n"+dt_day+" "+dt_date+"-"+dt_mon+"-"+dt_year
-    print("OUTPUT: " + date_time_str)
+    #print("OUTPUT: " + date_time_str)
     return date_time_str
 
 
@@ -49,5 +49,5 @@ class ClockModeOption(ModeOption):
         print("EXITING")
         self.stopFlag.set()
         self.thread.join()
-        self.stopFlag.wait()
+        self.stopFlag.clear()
         print("exited")
