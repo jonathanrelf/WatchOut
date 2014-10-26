@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0468c082-895c-4c89-bc8c-1bf276de0a90" name="Default" comment="Adds basic clock functionality (HH:MM:SS)">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WatchOut/SplashModeOption.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WatchOut/Screen.py" afterPath="$PROJECT_DIR$/WatchOut/Screen.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WatchOut/Watch.py" afterPath="$PROJECT_DIR$/WatchOut/Watch.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WatchOut/__init__.py" afterPath="$PROJECT_DIR$/WatchOut/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WatchOut/ClockModeOption.py" afterPath="$PROJECT_DIR$/WatchOut/ClockModeOption.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WatchOut/SplashModeOption.py" afterPath="$PROJECT_DIR$/WatchOut/SplashModeOption.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WatchOut.iws" />
@@ -18,7 +16,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/WatchOut$main.coverage" NAME="main Coverage Results" MODIFIED="1414292354967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/WatchOut$main.coverage" NAME="main Coverage Results" MODIFIED="1414293876653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -46,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/WatchOut/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="816">
-              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+              <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -55,8 +53,8 @@
       <file leaf-file-name="Watch.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WatchOut/Watch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-              <caret line="15" column="19" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
               <folding>
                 <element signature="e#0#52#0" expanded="true" />
               </folding>
@@ -67,7 +65,7 @@
       <file leaf-file-name="ModeOption.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WatchOut/ModeOption.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+            <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="612">
               <caret line="5" column="16" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="16" />
               <folding />
             </state>
@@ -77,18 +75,18 @@
       <file leaf-file-name="Screen.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WatchOut/Screen.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-              <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+              <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClockModeOption.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ClockModeOption.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WatchOut/ClockModeOption.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="309" max-vertical-offset="867">
-              <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.6344086" vertical-offset="394" max-vertical-offset="952">
+              <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -104,11 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SplashModeOption.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SplashModeOption.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WatchOut/SplashModeOption.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8172043" vertical-offset="326" max-vertical-offset="884">
-              <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="884">
+              <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
@@ -145,12 +143,12 @@
         <option value="$PROJECT_DIR$/backlight.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/WatchOut/ModeOption.py" />
-        <option value="$PROJECT_DIR$/WatchOut/ClockModeOption.py" />
         <option value="$PROJECT_DIR$/WatchOut/CalendarModeOption.py" />
-        <option value="$PROJECT_DIR$/WatchOut/Watch.py" />
         <option value="$PROJECT_DIR$/WatchOut/__init__.py" />
         <option value="$PROJECT_DIR$/WatchOut/Screen.py" />
+        <option value="$PROJECT_DIR$/WatchOut/Watch.py" />
         <option value="$PROJECT_DIR$/WatchOut/SplashModeOption.py" />
+        <option value="$PROJECT_DIR$/WatchOut/ClockModeOption.py" />
       </list>
     </option>
   </component>
@@ -717,14 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WatchOut/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="816">
-          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WatchOut/CalendarModeOption.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
@@ -733,11 +723,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WatchOut/Screen.py">
+    <entry file="file://$PROJECT_DIR$/WatchOut/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="816">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WatchOut/Watch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="37" max-vertical-offset="595">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -749,31 +749,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WatchOut/Watch.py">
+    <entry file="file://$PROJECT_DIR$/WatchOut/Screen.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WatchOut/ClockModeOption.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="309" max-vertical-offset="867">
-          <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WatchOut/SplashModeOption.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8172043" vertical-offset="326" max-vertical-offset="884">
-          <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="326" max-vertical-offset="884">
+          <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WatchOut/ClockModeOption.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6344086" vertical-offset="394" max-vertical-offset="952">
+          <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
