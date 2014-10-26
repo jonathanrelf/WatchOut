@@ -15,10 +15,4 @@ class CalendarModeOption(ModeOption):
         event = Events(self.one_diary_bearer_token).retrieve_first()
         Screen().update_display(event['summary'], event['start'])
 
-    def option3(self):
-        calendars = Calendars(self.one_diary_bearer_token)
-        calendar = calendars.retrieve()
-        print(calendar)
-        start_date = datetime.datetime.now()
-        end_date = start_date + datetime.timedelta(hours=1)
-        calendars.create_event(calendar['calendar_id'],"Hello","World",start_date,end_date)
+

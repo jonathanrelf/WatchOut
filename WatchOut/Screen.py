@@ -16,3 +16,7 @@ class Screen:
     def clear_display(self):
         print("Clear Display")
         self.pfc.lcd.clear()
+
+    def hide_cursors(self):
+        self.pfc.lcd.cursor_off()
+        self.pfc.lcd.blink_off()
