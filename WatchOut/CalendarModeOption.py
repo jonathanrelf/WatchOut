@@ -3,17 +3,17 @@ import datetime
 from WatchOut.ModeOption import ModeOption
 from OneDiary.calendars import Calendars
 from OneDiary.Events import Events
+from WatchOut.Screen import Screen
 
 
 class CalendarModeOption(ModeOption):
     def __init__(self,*args):
         super().__init__(*args)
+        self.one_diary_bearer_token = "irqghKXqA3nV978Z6Fq8qsFKZorlH3oD"
 
     def enter(self):
-        self.one_diary_bearer_token = "irqghKXqA3nV978Z6Fq8qsFKZorlH3oD"
-        calendar = Calendars(self.one_diary_bearer_token).retrieve()
         event = Events(self.one_diary_bearer_token).retrieve_first()
-        self.update_display(event['summary'] + "\n" + event['start'])
+        Screen().update_display(event['summary'], event['start'])
 
     def option3(self):
         calendars = Calendars(self.one_diary_bearer_token)
