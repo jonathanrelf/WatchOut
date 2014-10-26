@@ -14,7 +14,6 @@ class Screen:
         self.pfc.lcd.write(text+"\n"+text2)
 
     def clear_display(self):
-        print("Clear Display")
         self.pfc.lcd.clear()
 
     def hide_cursors(self):

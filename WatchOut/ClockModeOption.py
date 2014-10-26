@@ -27,11 +27,8 @@ class UpdateThread(threading.Thread):
         self.stopped = event
 
     def run(self):
-        print("RUN")
-        while not self.stopped.wait(1):
+        while not self.stopped.wait(0.01):
             Screen().update_display(update_time())
-        print("STOP LOOP")
-
 
 class ClockModeOption(ModeOption):
     def __init__(self,*args):

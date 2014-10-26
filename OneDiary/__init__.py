@@ -1,5 +1,5 @@
 __author__ = 'Jonathan'
-from OneDiary.Calendars import Calendars
+from OneDiary.calendars import Calendars
 from OneDiary.Events import Events
 
 

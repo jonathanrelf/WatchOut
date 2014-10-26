@@ -1,7 +1,6 @@
 __author__ = 'Jonathan'
 from WatchOut.ModeOption import ModeOption
 from pifacecad.tools.question import LCDQuestion
-from pifacecad.tools.scanf import LCDScanf
 from WatchOut.Screen import Screen
 from OneDiary.calendars import Calendars
 import datetime
