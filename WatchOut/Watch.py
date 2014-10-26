@@ -3,7 +3,6 @@ from WatchOut.CalendarModeOption import CalendarModeOption
 from WatchOut.MenuModeOption import MenuModeOption
 from WatchOut.SplashModeOption import SplashModeOption
 from WatchOut.NewEventModeOption import NewEventModeOption
-from WatchOut.PiiModeOption import PiiModeOption
 
 
 class Watch(object):
@@ -16,8 +15,7 @@ class Watch(object):
                       {'name': 'menu', 'option': MenuModeOption(self)},
                       {'name': 'clock', 'option': ClockModeOption(self)},
                       {'name': 'nextevent', 'option': CalendarModeOption(self)},
-                      {'name': 'newevent', 'option': NewEventModeOption(self)},
-                      {'name': 'pii', 'option': PiiModeOption(self)})
+                      {'name': 'newevent', 'option': NewEventModeOption(self)})
         self.current_mode['option'].enter()
 
     def switch_mode(self,mode=''):
