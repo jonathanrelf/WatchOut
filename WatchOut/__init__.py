@@ -19,6 +19,10 @@ def option4(event):
     global watch
     watch.current_mode['option'].option4()
 
+def option4off(event):
+    global watch
+    watch.current_mode['option'].option4()
+
 def option5(event):
     global watch
     watch.current_mode['option'].option5()

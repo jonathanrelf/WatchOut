@@ -3,19 +3,20 @@ from WatchOut.CalendarModeOption import CalendarModeOption
 from WatchOut.MenuModeOption import MenuModeOption
 from WatchOut.SplashModeOption import SplashModeOption
 from WatchOut.NewEventModeOption import NewEventModeOption
-
+from WatchOut.BacklightModeOption import BacklightModeOption
 
 class Watch(object):
     def __init__(self, pfc, start_mode='menu'):
         self.pfc = pfc
-        self.possible_modes = ('splash','menu','clock','nextevent','newevent','pii')
+        self.possible_modes = ('splash','menu','clock','nextevent','newevent','backlight')
 
         self.current_mode_index = self.possible_modes.index(start_mode)
         self.modes = ({'name': 'splash', 'option': SplashModeOption(self)},
                       {'name': 'menu', 'option': MenuModeOption(self)},
                       {'name': 'clock', 'option': ClockModeOption(self)},
                       {'name': 'nextevent', 'option': CalendarModeOption(self)},
-                      {'name': 'newevent', 'option': NewEventModeOption(self)})
+                      {'name': 'newevent', 'option': NewEventModeOption(self)},
+                      {'name': 'backlight', 'option': BacklightModeOption(self)})
         self.current_mode['option'].enter()
 
     def switch_mode(self,mode=''):

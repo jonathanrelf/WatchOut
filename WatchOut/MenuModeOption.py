@@ -1,6 +1,7 @@
 __author__ = 'Jonathan'
 from WatchOut.Screen import Screen
 from WatchOut.ModeOption import ModeOption
+import time
 
 class MenuModeOption(ModeOption):
     def __init__(self,*args):
@@ -8,7 +9,7 @@ class MenuModeOption(ModeOption):
 
     def enter(self):
         Screen().clear_display()
-        Screen().update_display("CLK NXT NEW PII "," v   v   v   v")
+        Screen().update_display("CLK NXT NEW LIT "," v   v   v   v")
 
     def option1(self):
         self.watch.switch_mode('clock')
@@ -20,4 +21,5 @@ class MenuModeOption(ModeOption):
         self.watch.switch_mode('newevent')
 
     def option4(self):
-        self.watch.switch_mode('pii')
+        self.watch.switch_mode('backlight')
+        self.watch.show_menu()
