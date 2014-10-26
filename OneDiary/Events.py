@@ -11,8 +11,11 @@ class Events(object):
 
     def retrieve_first(self):
         print('retrieving first event')
+        return self.retrieve_all()[0]
+
+    def retrieve_all(self):
+        print('retrieving all events')
         events_response = requests.get(self.endpoint, headers=self.headers)
         events_json = events_response.json()
         print(events_json)
-        events = events_json['events']
-        return events[0]
+        return events_json['events']

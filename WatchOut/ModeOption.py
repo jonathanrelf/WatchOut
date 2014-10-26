@@ -29,3 +29,12 @@ class ModeOption(object):
 
     def option4(self):
         pass
+
+    def option5(self):
+        pass
+
+    def option6(self):
+        pass
+
+    def option7(self):
+        pass
