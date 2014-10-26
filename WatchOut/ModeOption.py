@@ -29,10 +29,3 @@ class ModeOption(object):
 
     def option4(self):
         pass
-
-    def update_display(self, text=""):
-        self.watch.pfc.lcd.set_cursor(0,0)
-        self.watch.pfc.lcd.write(text)
-
-    def clear_display(self):
-        self.watch.pfc.lcd.clear()

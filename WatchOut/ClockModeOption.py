@@ -1,13 +1,12 @@
 __author__ = 'Jonathan'
 from WatchOut.ModeOption import ModeOption
+from WatchOut.Screen import Screen
 import time
 import threading
 import pifacecad
 
 class UpdateThread(threading.Thread):
-
     pfc = pifacecad.PiFaceCAD()
-
     def __init__(self, event):
         threading.Thread.__init__(self)
         self.stopped = event
@@ -15,8 +14,7 @@ class UpdateThread(threading.Thread):
     def run(self):
         print("RUN")
         while not self.stopped.wait(1):
-            self.pfc.lcd.set_cursor(0,0)
-            self.pfc.lcd.write(self.update_time())
+            Screen().update_display(self.update_time())
         print("STOP LOOP")
 
     def update_time(self):
@@ -37,10 +35,6 @@ class ClockModeOption(ModeOption):
     def __init__(self,*args):
         super().__init__(*args)
 
-#    def update(self):
-#        if(self.running):
-#            threading.Timer(1, self.update_display(self.update_time)).start()
-
     def enter(self):
         self.stopFlag = threading.Event()
         thread = UpdateThread(self.stopFlag)
@@ -48,9 +42,7 @@ class ClockModeOption(ModeOption):
 
         print("ENTER")
 
-        self.clear_display()
-
-#        self.update()
+        Screen().clear_display
 
     def exit(self):
         print("EXIT")
