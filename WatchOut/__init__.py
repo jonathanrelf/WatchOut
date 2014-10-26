@@ -23,7 +23,7 @@ def show_menu(event):
     global watch
     watch.show_menu()
 
-def start_watch(start_mode='menu'):
+def start_watch(start_mode='splash'):
     pfc = pifacecad.PiFaceCAD()
     pfc.lcd.clear()
 

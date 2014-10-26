@@ -2,6 +2,7 @@ import pifacecad
 
 
 class Screen:
+    pfc_base = pifacecad
     pfc = pifacecad.PiFaceCAD()
 
     def update_display(self, text=""):
