@@ -23,7 +23,7 @@ def switch_mode(event):
     global watch
     watch.switch_mode()
 
-def start_watch(start_mode='clock'):
+def start_watch(start_mode='splash'):
     pfc = pifacecad.PiFaceCAD()
     pfc.lcd.clear()
 

@@ -1,14 +1,16 @@
 from WatchOut.ClockModeOption import ClockModeOption
 from WatchOut.CalendarModeOption import CalendarModeOption
+from WatchOut.SplashModeOption import SplashModeOption
 
 class Watch(object):
     def __init__(self, pfc, start_mode='clock'):
         self.pfc = pfc
-        possible_modes = ('clock','calendar')
+        possible_modes = ('clock','calendar','splash')
 
         self.current_mode_index = possible_modes.index(start_mode)
         self.modes = ({'name': 'clock', 'option': ClockModeOption(self)},
-                      {'name': 'calendar', 'option': CalendarModeOption(self)},)
+                      {'name': 'calendar', 'option': CalendarModeOption(self)},
+                      {'name': 'splash', 'option': SplashModeOption(self)})
         self.current_mode['option'].enter()
 
     def switch_mode(self):
