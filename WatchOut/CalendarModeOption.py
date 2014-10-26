@@ -1,6 +1,6 @@
 __author__ = 'Jonathan'
 from WatchOut.ModeOption import ModeOption
-from OneDiary.Calendars import Calendars
+from OneDiary.calendars import Calendars
 from WatchOut.Screen import Screen
 
 
